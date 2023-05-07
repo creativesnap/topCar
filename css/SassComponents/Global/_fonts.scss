@@ -1,0 +1,32 @@
+/********************************* Fonts *********************************
+***********************************************************************************
+***********************************************************************************/
+
+/* Font Name : din-next-lt-w23 */
+
+@import './variables';
+
+@font-face {
+    font-family: $blackFont;
+    src: url("../webfonts/DIN_Next_LT_W23/din-next-lt-w23-black.ttf");
+}
+
+@font-face {
+    font-family: $boldFont ;
+    src: url("../../webfonts/DIN_Next_LT_W23/din-next-lt-w23-bold.ttf");
+}
+
+@font-face {
+    font-family: $lightFont ;
+    src: url("../webfonts/DIN_Next_LT_W23/din-next-lt-w23-light.ttf");
+}
+
+@font-face {
+    font-family: $mediumFont;
+    src: url("../webfonts/DIN_Next_LT_W23/din-next-lt-w23-medium.ttf");
+}
+
+@font-face {
+    font-family: $RegularFont;
+    src: url("../webfonts/DIN_Next_LT_W23/din-next-lt-w23-regular.ttf");
+}

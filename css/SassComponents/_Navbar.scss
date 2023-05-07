@@ -1,0 +1,140 @@
+/********************************* Navbar *********************************
+***********************************************************************************
+***********************************************************************************/
+
+
+
+.custom-navbar {
+    &.light-nav {
+        background-color: rgba($color: $mainColor, $alpha: 0.7) ;
+        position: static;
+    }
+    background-color: $mainColor ;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+
+
+    .nav-link {
+        font-size: 16px;
+        font-family: $RegularFont;
+        padding: 5px 15px !important;
+        color: $whiteColor;
+
+        &.active {
+            background-color: $secondColor;
+            border-radius: 20px;
+        }
+    }
+
+    .navbar-info {
+        > li {
+            margin-left: 10px
+        }
+        
+
+    }
+
+    .custom-navbar-toggler {
+        display: none;
+
+        .custom-icon {
+
+            svg,
+            i {
+                color: $secondColor;
+                font-size: 30px;
+                cursor: pointer;
+                transition: all .2s ease;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+.call-icon {
+    @include flex();
+
+   
+
+}
+
+
+
+.lang {
+    @include flex();
+
+    .dropdown-menu {
+        right: -8px;
+        background-color: $mainLightColor;
+        min-width: 6rem;
+
+        .dropdown-item {
+            background-color: $mainColor;
+            margin-bottom: 5px;
+            // background-color: $whiteColor;
+            color: $whiteColor;
+            text-align: left;
+            font-family: $mediumFont;
+            transition: all .2s ease;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $secondColor;
+            }
+        }
+
+    }
+
+    .dropdown-toggle {
+        padding: 5px 10px;
+        width: 90px;
+        @include flex();
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: $mainLightColor;
+        border-color: $mainLightColor;
+
+        svg,
+        i {
+            font-size: 12px;
+        }
+
+        &::after {
+            display: none;
+
+
+        }
+    }
+}
+
+.search-icon {
+    @include flex();
+    position: relative;
+    input {
+        margin-right: 10px;
+        border-radius: 15px;
+        display: none;
+
+     
+    }
+    svg,
+    i {
+        color: $whiteColor;
+        font-size: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        top: 50%;
+        
+        left: 0;
+ 
+    }
+}

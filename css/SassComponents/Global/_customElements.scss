@@ -1,0 +1,213 @@
+/********************************* Custom Element *********************************
+***********************************************************************************
+***********************************************************************************/
+
+
+body {
+    font-family: $RegularFont , $mediumFont , system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+
+    background-color: $mainColor;
+}
+
+a {
+    text-decoration: none;
+
+
+    font-size: 16px;
+    font-family: $RegularFont;
+    color: #FFFFFF !important; 
+
+}
+
+
+
+input,
+button , 
+select {
+
+    &:active,
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        border-color : none !important
+    }
+}
+
+.form-control:focus {
+    
+    &:active,
+    &:focus {
+        border-color : $mainColor
+    }
+}
+
+
+
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-btn {
+    background-color: $secondColor;
+    color: $whiteColor;
+    min-width: 150px;
+    font-size: 16px;
+    &:hover , 
+    &:active , 
+    &:focus {
+        color: $whiteColor;
+    }
+}
+
+
+.view_all {
+    background-color: transparent;
+    min-width: 150px;
+    border: 1px solid $textColor3;
+    border-radius: 25px;
+    padding: 3px 10px 3px 5px;
+    font-family: $mediumFont;
+    @include flex();
+    justify-content: space-between;
+    font-size: 16px;
+    color: $whiteColor;
+    gap: 15px;
+    cursor: pointer;
+    &:hover , 
+    &:active , 
+    &:focus {
+        .icon {
+            background-color: $secondColor ;
+            svg , i {
+                color: $whiteColor
+            }
+        }
+    }
+    
+    .icon {
+        @include flex();
+        background-color: $textColor3;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: all .2s ease;
+
+        svg , i {
+            color: $mainColor;
+            transition: all .2s ease;
+
+        }
+    }
+}
+
+.desc {
+    font-size: 18px;
+    color: $whiteColor;
+    font-family: $RegularFont;
+
+
+}
+.desc_muted {
+    color: $textColor3;
+    font-size: 16px;
+    font-family: $RegularFont;
+    line-height: 1.6
+}
+.section_nav {
+    @include flex();
+    justify-content: space-between;
+    
+}
+
+.car_item {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $mainColor, $alpha: 0.3);
+        // box-shadow: rgba($mainColor, 1) 0px 30px 60px -12px inset, rgba($mainColor, 1) 0px 18px 36px -18px inset;
+
+        box-shadow: rgba($mainColor, 0.9) 0px -100px 60px 0 inset
+
+    }
+ 
+    .car_item_info {
+        .title {
+            color: $whiteColor;
+            font-size: 16px;
+            font-family: $mediumFont;
+        }
+        .view_all {
+            font-size: 14px;
+            svg , i {
+                font-size: 12px;
+            }
+            font-family: $RegularFont;
+        }
+        padding: 0 15px;
+        width: 100%;
+        @include flex();
+        justify-content: space-between;
+        margin: 10px 0;
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+    }
+}
+
+@mixin overlay() {
+    padding: $sectionPadding 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.8);
+}
+
+
+.border-icon {
+    @include flex();
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $mainLightColor;
+    margin-left: 5px;
+
+    svg,
+    i {
+        font-size: 14px;
+        color: $secondColor;
+    }
+}
+
+.bb {
+    color: $secondColor;
+    font-weight: bold;
+    margin: 0 3px;
+    font-size: 20px;
+}
+
+
+/*Apply styles to selected option*/
+
+option:hover{
+    background: red !important;
+    background-color: red !important;
+    color: white ;
+ }
+
+
+
+/********************************* End Global *********************************
+***********************************************************************************
+***********************************************************************************/

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>مرسيدس بنز ذات الدفع الرباعي </title>
+    <!-- Css Filse -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/Swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fontAwesome/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+</head>
+
+<body>
+  
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar light-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#">
+                <img src="./images/logo/logo.png" alt="logo">
+            </a>
+            <div class="custom-navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="custom-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./RentalCars.html">تأجير السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./car.html">السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./aboutUs.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">إتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./RentalTerms.html">شروط التأجير </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-info">
+                    <li class="nav-item ">
+                        <a class="nav-link call-icon" href="tel:01254875412">
+
+                            <span class="border-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <span>
+                                01254875412
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item lang">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                العربية
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">En</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item search-icon">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="" class="form-control" placeholder="search">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Sidebar -->
+    <div class="sidebar">
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand me-0" href="./index.html">
+                    <img src="./images/logo/logo.png" alt="logo">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./RentalCars.html">تأجير السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./car.html">السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./aboutUs.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">إتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./RentalTerms.html"> شروط التأجير</a>
+                    </li>
+
+
+
+
+
+                </ul>
+                <div class="offcanvas-footer">
+                    <a class="nav-link call-icon justify-content-start" href="tel:01254875412">
+
+                        <span class="border-icon">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </span>
+                        <span>
+                            01254875412
+                        </span>
+                    </a>
+                    <a class="nav-link call-icon justify-content-start" href="tel:01254875412">
+
+                        <span class="border-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </span>
+                        <span>
+                            En
+                        </span>
+                    </a>
+
+                    <div class="nav-link">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="بحث" aria-describedby="button-addon1">
+                            <button class="btn custom-btn" type="button" id="button-addon1">بحث</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Stand Cars -->
+    <section class="stand-cars">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                
+                    <ol class="breadcrumb custom-breadcrumb">
+                        <li class="breadcrumb-item-home">
+                            <a href="./index.html">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                                الرئيسية
+                            </a>
+                        </li>
+
+                    </ol>
+                </div>
+                <div class="col-12 rental_car_swiper">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title">
+                                <span>مرسيدس بنز ذات الدفع الرباعي</span>
+                                <!-- <i class="far fa-heart"></i> -->
+                                <img src="./images/filter_icons/5.png" alt="icon">
+                            </div>
+                        </div>
+                        <div class="col-12">
+
+                            <div class="feat">
+                                
+                                <span class="feat-item">
+                                    <div class="icon">
+                                        <!-- <i class="far fa-heart"></i> -->
+                                        <img src="./images/filter_icons/1.png" alt="icon">
+                                    </div>
+                                    <span>
+                                        <span>سنة الصنع</span>
+                                        <span>2023</span>
+                                    </span>
+                                </span>
+                                <span class="feat-item">
+                                    <div class="icon">
+                                        <!-- <i class="far fa-heart"></i> -->
+                                        <img src="./images/filter_icons/2.png" alt="icon">
+                                    </div>
+                                    <span>
+                                        <span> حجم المحرك</span>
+                                        <span>1450</span>
+                                    </span>
+                                </span>
+                                <span class="feat-item">
+                                    <div class="icon">
+                                        <!-- <i class="far fa-heart"></i> -->
+                                        <img src="./images/filter_icons/3.png" alt="icon">
+                                    </div>
+                                    <span>
+                                        <span> كم</span>
+                                        <span>0 كم</span>
+                                    </span>
+                                </span>
+                                <span class="feat-item">
+                                    <div class="icon">
+                                        <!-- <i class="far fa-heart"></i> -->
+                                        <img src="./images/filter_icons/4.png" alt="icon">
+                                    </div>
+                                    <span>
+                                        <span> يد</span>
+                                        <span>1</span>
+                                    </span>
+                                </span>
+                                <span class="feat-item">
+                                    <div class="icon">
+                                        <!-- <i class="far fa-heart"></i> -->
+                                        <img src="./images/filter_icons/5.png" alt="icon">
+                                    </div>
+                                    <span>
+                                        <span> الفئات</span>
+                                        <span>ترف</span>
+                                    </span>
+                                </span>
+                                <span class="feat-item">
+                                    <div class="icon">
+                                        <!-- <i class="far fa-heart"></i> -->
+                                        <img src="./images/filter_icons/6.png" alt="icon">
+                                    </div>
+                                    <span>
+                                        <span> اللون</span>
+                                        <span>أبيض</span>
+                                    </span>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 d-none d-lg-block">
+                            <div class="alert-in-button">
+                                <div class="car_alert">
+                                    <div class="car_alert_title">أقساط شهرية</div>
+                                    <div class="price">
+                                        <div class=" old">22,00 جم</div>
+                                        <div class="full_price">22,00 جم</div>
+                                    </div>
+                                </div>
+                                <div class="car_alert d-lg-none">
+                                    <div class="car_alert_title">أقساط شهرية</div>
+                                    <div class="price">
+                                        <div class=" old">22,00 جم</div>
+                                        <div class="full_price">22,00 جم</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-0 col-md-6 offset-md-3 col-12">
+                            <div class="swiper rental_car_swiper1">
+                                <div class="swiper-wrapper">
+        
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+        
+                                        <div class="img">
+                                            <img src="./images/previewCar.png" alt="previewCar" class="w-100">
+                                        </div>
+        
+                                    </div>
+                                    <div class="swiper-slide">
+        
+                                        <div class="img">
+                                            <img src="./images/previewCar.png" alt="previewCar" class="w-100">
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <!-- Swiper Top -->
+        
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev in-small">
+                                    <i class="fas fa-chevron-right"></i>
+        
+                                </div>
+                                <div class="swiper-button-next in-small">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 mb-2">
+                            <div class="alert-in-button">
+                                <div class="car_alert">
+                                    <div class="car_alert_title">أقساط شهرية</div>
+                                    <div class="price">
+                                        <div class=" old">22,00 جم</div>
+                                        <div class="full_price">22,00 جم</div>
+                                    </div>
+                                </div>
+                                <div class="car_alert d-lg-none">
+                                    <div class="car_alert_title">أقساط شهرية</div>
+                                    <div class="price">
+                                        <div class=" old">22,00 جم</div>
+                                        <div class="full_price">22,00 جم</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- Buttons -->
+                            <div class="swiper_button">
+                                <div class="more">
+                                    <button class="view_all m-auto">
+                                        المزيد من المعلومات
+                                        <div class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider main container -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Stand Cars -->
+    <div class="main_item descripe_car">
+        <div class="container-fluid">
+            <h2 class="custom-head">وصف السيارة</h2>
+            <div class="desc">
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج ألياي لابوري ات دولار ماجنا أليكيوا سيت دو يوسمود
+                تيمبو كايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد لوريم ايبسوم
+                دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج ألياي لابوري ات دولار ماجنا أليكيوا سيت دو يوسمود تيمبو
+                كايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد لوريم ايبسوم دولار
+                سيت أميت ,كونسيكتيتور أدايبا يسكينج ألياي لابوري ات دولار ماجنا أليكيوا سيت دو يوسمود تيمبو
+                كايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد لوريم ايبسوم دولار
+                سيت أميت ,كونسيكتيتور أدايبا يسكينج ألياي لابوري ات دولار ماجنا أليكيوا سيت دو يوسمود تيمبو
+                كايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+            </div>
+        </div>
+    </div>
+    <div class="main_item car_features">
+        <div class="container-fluid">
+            <h2 class="custom-head">مميزات السيارة</h2>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <ul class="list-unstyled m-0">
+                                <li>محرك 1400 سي سي</li>
+                                <li>محرك 1400 سي سي</li>
+                                <li>محرك 1400 سي سي</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <ul class="list-unstyled m-0">
+                                <li>محرك 1400 سي سي</li>
+                                <li>محرك 1400 سي سي</li>
+                                <li>محرك 1400 سي سي</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_item car_features2">
+        <div class="container-fluid">
+            <h2 class="custom-head"> إمكانيات السيارة</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <div class="main_item_tabs">
+                        <ul class="nav nav-tabs custom-nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">مواصفات المحرك</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">ناقل الحركة </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">القياسات</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab2" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab2-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane2" aria-selected="false">الهيكل</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <ul class="list-unstyled features-list">
+                                    <li class="item">
+                                        <span class="title">ناقل الحركة</span>
+                                        <span>1.4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> نوع المحرك</span>
+                                        <span>V4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">تيربو</span>
+                                        <span>غير متاح</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">نظام المحرك</span>
+                                        <span>بنزين </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> الصمامات</span>
+                                        <span>16 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> العزم</span>
+                                        <span>132 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> إستهلاك الوقود باللتر</span>
+                                        <span>18.2 لتر </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <ul class="list-unstyled features-list">
+                                    <li class="item">
+                                        <span class="title">ناقل الحركة</span>
+                                        <span>1.4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> نوع المحرك</span>
+                                        <span>V4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">تيربو</span>
+                                        <span>غير متاح</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">نظام المحرك</span>
+                                        <span>بنزين </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> الصمامات</span>
+                                        <span>16 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> العزم</span>
+                                        <span>132 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> إستهلاك الوقود باللتر</span>
+                                        <span>18.2 لتر </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <ul class="list-unstyled features-list">
+                                    <li class="item">
+                                        <span class="title">ناقل الحركة</span>
+                                        <span>1.4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> نوع المحرك</span>
+                                        <span>V4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">تيربو</span>
+                                        <span>غير متاح</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">نظام المحرك</span>
+                                        <span>بنزين </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> الصمامات</span>
+                                        <span>16 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> العزم</span>
+                                        <span>132 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> إستهلاك الوقود باللتر</span>
+                                        <span>18.2 لتر </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane fade" id="contact-tab2-pane" role="tabpanel"
+                                aria-labelledby="contact-tab2" tabindex="0">
+                                <ul class="list-unstyled features-list">
+                                    <li class="item">
+                                        <span class="title">ناقل الحركة</span>
+                                        <span>1.4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> نوع المحرك</span>
+                                        <span>V4</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">تيربو</span>
+                                        <span>غير متاح</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title">نظام المحرك</span>
+                                        <span>بنزين </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> الصمامات</span>
+                                        <span>16 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> العزم</span>
+                                        <span>132 </span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="title"> إستهلاك الوقود باللتر</span>
+                                        <span>18.2 لتر </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-image: url(./images/footer.png);">
+        <div class="overlay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="logo mb-4">
+                                <img src="./images/logo/logo.png" alt="logo">
+                            </div>
+                            <form action="">
+                                <div class="input-group mb-3">
+
+                                    <input type="text" class="form-control" placeholder="البريد الإلكترونى"
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn custom-btn" type="button" id="button-addon1">إشترك الأن</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head">روابط مهمة</div>
+                            <ul class="list-unstyled list">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">شروط التأجير</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">شروط شروط الإستخدام</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head">إتصل بنا </div>
+                            <ul class="list-unstyled list-2">
+                                <a href="tel:010235689">
+                                    <li class="nav-item mb-2">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-phone-flip"></i>
+                                        </span>
+                                        010235689
+                                        <span class="bb">-</span>
+                                        010235689
+                                    </li>
+                                </a>
+                                <a href="https://goo.gl/maps/Qyo6XYXDMhE493rZ6">
+                                    <li class="nav-item">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        لوريم ايبسوم دولار سيتلوريم ايبسوم دولار سيت
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head"> تابعنا </div>
+                            <ul class="list-unstyled ">
+                                <li class="nav-item social_media mb-2">
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+
+
+    <!-- Js Files -->
+
+    <script src="./js/Jquery/jquery.3.6.0.min.js"></script>
+    <script src="./js/Bootstrap/bootstrap.min.js"></script>
+    <script src="./js/Swiper/swiper-bundle.min.js"></script>
+    <script src="./js/FontAwesome/all.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

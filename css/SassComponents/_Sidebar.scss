@@ -1,0 +1,77 @@
+.sidebar {
+    position: fixed;
+    z-index: 9999;
+    .offcanvas-header {
+        position: relative;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $mainLightColor;
+        border-bottom: 3px solid $secondColor;
+
+        .btn-close {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: $whiteColor;
+            background: none;
+
+            svg,
+            i {
+                color: $whiteColor !important;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .offcanvas-body {
+        background-color: $mainColor;
+        padding: 0;
+
+        .navbar-nav {
+
+            .nav-link {
+                padding: 15px;
+                background-color: $mainColor;
+                font-size: 16px;
+                color: $whiteColor;
+                font-family: $RegularFont;
+                border-bottom: 1px solid $mainLightColor;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: $mainLightColor;
+                }
+            }
+        }
+    }
+
+    .search-icon-sidebar {
+        input {
+            display: block;
+        }
+
+       
+    }
+    .input-group  {
+        button {
+            min-width: 100px !important;
+            font-family: $mediumFont;
+            font-size: 14px;
+            
+        }
+        input {
+            background-color: $mainLightColor;
+            border-color: $mainLightColor;
+            color: $textColor3;
+            &:focus , 
+            &:active {
+    
+                border-color: $mainLightColor !important;
+                outline: none !important;
+            }
+        }
+    }
+}

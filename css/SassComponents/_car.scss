@@ -1,0 +1,88 @@
+
+
+
+.main_item {
+    padding : $sectionPadding 0;
+    
+}
+
+.main_item.descripe_car {
+    background-color: $mainLightColor;
+}
+
+.car_features {
+  
+    li {
+        color: $textColor;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5px;
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $secondColor;
+            margin-left: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+}
+
+.car_features2 {
+    background-color: $mainLightColor;
+}
+
+
+.custom-nav-tabs {
+    margin-bottom: 30px;
+    border-bottom: .5px solid $textColor3;
+    .nav-link {
+        color: $textColor;
+        font-size: 16px;
+        &:hover , 
+        &:active , 
+        &:focus {
+            border-color: transparent !important;
+        }
+        &.active {
+            background-color: transparent;
+            border-color: transparent !important;
+            border-bottom: 2px solid $whiteColor !important;
+            color: $whiteColor;
+        }
+    }
+}
+
+
+.features-list {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid $mainLightColor;
+    .item {
+        background-color: rgba($color: $mainColor, $alpha: 0.5);;
+        padding: 10px 20px;
+        &:first-of-type {border-top-left-radius: 15px;border-top-right-radius: 15px;}
+        &:last-of-type {border-bottom-left-radius: 15px; border-bottom-right-radius: 15px}
+        &:nth-child(odd) {
+            background-color: rgba($color: $mainColor, $alpha: 1);
+        }
+        color: $whiteColor;
+        width: 100%;
+        display: flex;
+        justify-content : space-between;
+        align-items: center;
+
+
+        span {
+            color: $textColor;
+            flex-basis: 50%;
+            &.title {
+                color: $whiteColor;
+            }
+        }
+
+    }
+}

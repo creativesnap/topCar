@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title> تواصل معنا</title>
+    <!-- Css Filse -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/fontAwesome/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Swiper/swiper-bundle.min.css" />
+
+
+
+</head>
+
+<body>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar light-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#">
+                <img src="./images/logo/logo.png" alt="logo">
+            </a>
+            <div class="custom-navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="custom-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./RentalCars.html">تأجير السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./car.html">السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./aboutUs.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contact.html">إتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./RentalTerms.html">شروط التأجير </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-info">
+                    <li class="nav-item ">
+                        <a class="nav-link call-icon" href="tel:01254875412">
+
+                            <span class="border-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <span>
+                                01254875412
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item lang">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                العربية
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">En</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item search-icon">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="" class="form-control" placeholder="search">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Sidebar -->
+    <div class="sidebar">
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand me-0" href="./index.html">
+                    <img src="./images/logo/logo.png" alt="logo">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./RentalCars.html">تأجير السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./car.html">السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./aboutUs.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">إتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./RentalTerms.html"> شروط التأجير</a>
+                    </li>
+
+
+
+
+
+                </ul>
+                <div class="offcanvas-footer">
+                    <a class="nav-link call-icon justify-content-start" href="tel:01254875412">
+
+                        <span class="border-icon">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </span>
+                        <span>
+                            01254875412
+                        </span>
+                    </a>
+                    <a class="nav-link call-icon justify-content-start" href="tel:01254875412">
+
+                        <span class="border-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </span>
+                        <span>
+                            En
+                        </span>
+                    </a>
+
+                    <div class="nav-link">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="بحث" aria-describedby="button-addon1">
+                            <button class="btn custom-btn" type="button" id="button-addon1">بحث</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Contact Page -->
+    <section class="c-header">
+        <div class="overlay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ol class="breadcrumb custom-breadcrumb">
+                            <li class="breadcrumb-item-home">
+                                <a href="./index.html">
+                                    <i class="fas fa-home"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#">
+                                    <i class="fas fa-angle-double-left"></i>
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#">
+                                    <i class="fas fa-angle-double-left"></i>
+                                    الرئيسية
+                                </a>
+                            </li>
+    
+                        </ol>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="custom-head">نحن هنا لمساعتدك</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 map main_section_top">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.61185042532!2d31.340866522711554!3d30.059611343358824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1683389681166!5m2!1sar!2seg"
+                        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+                <div class="col-12">
+
+                    <form class="contact_form" action="">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mb-5">
+                                <h2 class="custom-head">من فضلك قم بملىء النموذج التالي</h2>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input_item">
+                                            <label for="a1">
+                                                <i class="fas fa-user"></i>
+                                                <span>الإسم</span>
+                                            </label>
+                                            <input id="a1" type="text" class="form-control" placeholder="الإسم">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="input_item">
+                                            <label for="a2">
+                                                <i class="fas fa-phone"></i>
+                                                <span>رقم الجوال</span>
+                                            </label>
+                                            <input id="a2" type="text" class="form-control" placeholder="رقم الجوال">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="input_item">
+                                            <label for="a3">
+                                                <i class="far fa-envelope"></i>
+                                                <span>البريد الإلكترونى</span>
+                                            </label>
+                                            <input id="a3" type="text" class="form-control"
+                                                placeholder="البريد الإلكترونى">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_item">
+                                            <label for="a5">
+                                                <i class="fas fa-pen"></i>
+                                                <span>إكتب رسالتك</span>
+                                            </label>
+                                            <textarea class="form-control" name="textarea" id="a5" rows="5"
+                                                placeholder="إكتب رسالتك"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="view_all">
+                                            إرسال
+                                            <div class="icon">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <h2 class="custom-head">تواصل معنا</h2>
+                                <div class="contact_icons">
+                                    <div class="item">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        <div class="text_icon">
+                                            <span class="title">رقم الهاتف</span>
+                                            <span>01254875220</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="border-icon">
+                                            <i class="far fa-envelope"></i>
+                                        </span>
+                                        <div class="text_icon">
+                                            <span class="title"> البريد الإلكترونى</span>
+                                            <span>topCar@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="border-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </span>
+                                        <div class="text_icon">
+                                            <span class="title"> العنوان</span>
+                                            <span>لوريم ايبسوم دولار سيت أميت,كونسيكتيتور أدايبا يسكينج أليايت,سيت
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="border-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </span>
+                                        <div class="text_icon">
+                                            <span class="title"> أيام العمل</span>
+                                            <span>
+                                                السبت
+                                                -
+                                                الأحد
+                                                <span>
+                                                    8PM
+                                                    <span class="bb">-</span>
+                                                    9AM
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact Page -->
+
+    <!-- End Features -->
+    <!-- Footer -->
+    <footer class="footer" style="background-image: url(./images/footer.png);">
+        <div class="overlay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="logo mb-4">
+                                <img src="./images/logo/logo.png" alt="logo">
+                            </div>
+                            <form action="">
+                                <div class="input-group mb-3">
+
+                                    <input type="text" class="form-control" placeholder="البريد الإلكترونى"
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn custom-btn" type="button" id="button-addon1">إشترك الأن</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head">روابط مهمة</div>
+                            <ul class="list-unstyled list">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">شروط التأجير</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">شروط شروط الإستخدام</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head">إتصل بنا </div>
+                            <ul class="list-unstyled list-2">
+                                <a href="tel:010235689">
+                                    <li class="nav-item mb-2">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-phone-flip"></i>
+                                        </span>
+                                        010235689
+                                        <span class="bb">-</span>
+                                        010235689
+                                    </li>
+                                </a>
+                                <a href="https://goo.gl/maps/Qyo6XYXDMhE493rZ6">
+                                    <li class="nav-item">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        لوريم ايبسوم دولار سيتلوريم ايبسوم دولار سيت
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head"> تابعنا </div>
+                            <ul class="list-unstyled ">
+                                <li class="nav-item social_media mb-2">
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+
+
+    <!-- Js Files -->
+
+    <script src="./js/Jquery/jquery.3.6.0.min.js"></script>
+    <script src="./js/Bootstrap/bootstrap.min.js"></script>
+    <script src="./js/FontAwesome/all.min.js"></script>
+    <script src="./js/Swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

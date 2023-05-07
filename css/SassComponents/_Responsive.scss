@@ -1,0 +1,279 @@
+/********************************* Responsive *********************************
+***********************************************************************************
+***********************************************************************************/
+
+
+@media(min-width : 1199px) {
+    .header {
+        height: 100vh;
+    }
+
+    .container-fluid {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+    .card_brand_item {
+        .img {
+            img {
+                width: 60% !important;
+            }
+        }
+
+
+    }
+}
+
+@media(max-width : 1199px) {}
+
+@media(max-width : 991px) {
+    .custom-navbar-toggler {
+        display: block !important;
+    }
+
+    .header {
+        .header-content {
+            font-size: 30px !important;
+        }
+    }
+
+    .car-search-filter {
+
+        // top: 0 !important;
+        select {
+            margin-bottom: $textMargin
+        }
+
+    }
+
+
+
+
+}
+
+
+@media(min-width : 575px) {}
+
+@media(min-width : 768px) {
+    .car_item {
+        height: 250px !important;
+        overflow: hidden;
+
+    }
+}
+
+@media(max-width : 767px) {
+    .header {
+        .header-content {
+            font-size: 25px !important;
+        }
+
+    }
+
+    .car_item {
+        margin-bottom: 15px;
+    }
+
+    .car-search-filter {
+        margin-top: -10px;
+
+
+    }
+
+    .card_brand_item {
+        height: 130px;
+    }
+
+    .card_brand_item .img img {
+        width: 70%;
+    }
+
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+}
+
+@media(max-width : 575px) {
+    .header {
+        .header-content {
+            font-size: 18px !important;
+        }
+    }
+
+    .custom-head {
+        font-size: 22px;
+    }
+
+    .view_all {
+        min-width: 130px;
+    }
+
+    $sectionPadding : 35px !important;
+
+    .features .features_item span {
+        font-size: 16px;
+    }
+
+    .custom-navbar {
+        padding: 10px 0;
+    }
+
+
+
+
+    .contact_form {
+        margin-top: 0;
+
+        .custom-head {
+            font-size: 18px;
+        }
+    }
+
+    .c-header {
+        height: 380px;
+    }
+
+    .main_section_e {
+        .desc {
+            font-size: 16px;
+        }
+    }
+
+    .stand-cars .rental_car_swiper .title.title2 {
+        margin-bottom: 10px;
+    }
+
+    .name-head {
+        font-size: 22px;
+    }
+
+    .rentalCarsBody .filter .item .filter-title {
+        font-size: 16px;
+
+        .icon {
+            font-size: 16px;
+        }
+    }
+
+    .cars_car_item .footer_span {
+        gap: 15px;
+
+        .view_all .icon {
+            margin-right: 0;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+// Car Page
+
+@media(max-width : 575px) {
+    .stand-cars .rental_car_swiper .title {
+        font-size: 16px;
+    }
+
+    .stand-cars .rental_car_swiper .feat {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .car_alert .car_alert_title {
+        font-size: 16px;
+    }
+
+    .stand-cars .rental_car_swiper .feat .feat-item span * {
+        font-size: 13px !important;
+    }
+
+    .alert-in-button {
+        margin-top: -50px;
+
+        .car_alert {
+            margin-top: 0;
+        }
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+
+}
+
+@media(min-width : 576px) {
+    .cars_car_item {
+
+        .img {
+            height: 160px;
+        }
+    }
+}
+
+@media(max-width : 350px) {
+
+    .in-small {
+        top: 35%;
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 14px;
+
+        svg,
+        i {
+            font-size: 14px !important;
+        }
+    }
+
+    .custom-navbar .custom-navbar-toggler .custom-icon svg,
+    .custom-navbar .custom-navbar-toggler .custom-icon i {
+        font-size: 20px;
+    }
+
+    .stand-cars {
+        .rental_car_swiper {
+            .view_all {
+                font-size: 14px;
+            }
+
+            .alert-in-button {
+                margin-top: -100px;
+                font-size: 14px;
+                flex-wrap: wrap;
+                margin-bottom: 15px;
+
+                .car_alert {
+                    margin-top: 0;
+
+                    .price {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .title {
+                gap: 25px;
+            }
+
+            .feat {
+                justify-content: flex-start;
+
+                .feat-item {
+                    .icon {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

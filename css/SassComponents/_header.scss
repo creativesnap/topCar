@@ -1,0 +1,395 @@
+.header {
+    height: auto;
+    position: relative;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            flex-direction: column;
+            @include flex();
+            background-color: rgba($color: $mainColor, $alpha: 0.7);
+
+            .header-content {
+                font-family: $mediumFont;
+                font-size: 45px;
+                color: $whiteColor;
+                text-align: center;
+
+                span {
+                    display: block;
+                    text-align: center;
+
+                    &::after,
+                    &::before {
+                        content: "-";
+                        display: inline-block;
+                        font-size: 45px;
+                        color: $whiteColor;
+                        margin-right: 10px;
+                        font-family: $mediumFont;
+                    }
+
+                    &::before {
+                        margin-right: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .swiper-slide {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+.car-search-filter {
+    background-color: $mainLightColor;
+    padding: $divPadding;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    margin: $dviMargin 0;
+    margin-top: -100px;
+    z-index: 999;
+
+
+    select {
+        background-color: $mainColor;
+        color: $whiteColor;
+        border-color: $mainColor;
+        border-color: $mainColor !important;
+
+    }
+}
+
+
+
+.car_brands {
+ 
+    background-color: $mainColor;
+    position: relative;
+
+    .swiper-brand {
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .swiper-button-prev , 
+    .swiper-button-next {
+        display: none ;
+        @include flex();
+        width: 40px;
+        height: 40px;
+        
+        background-color: $secondColor;
+      
+        border-radius: 50%;
+   
+        
+        &::after {
+            display: none;
+        }
+
+        svg  , i {
+            color: $whiteColor;
+            font-size: 16px;
+        }
+    }
+    .swiper-button-next {
+        left: 0 !important;
+    }
+    .swiper-button-prev {
+        right: 0 !important;
+    }
+ 
+}
+
+
+
+.card_brand_item {
+    background-color: $mainLightColor;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    @include flex();
+    flex-direction: column;
+    height: 180px ;
+    .img {
+        @include flex();
+        height: 80%;
+        width: 100%;
+        img {
+            width: 85%;
+        }
+    }
+
+    p {
+        margin-top: 0;
+        color: white;
+        font-size: 18px;
+        font-family: $RegularFont;
+        margin-bottom: 0;
+    }
+}
+
+
+.custom-head {
+    font-size: 30px;
+    font-family: $mediumFont;
+    position: relative;
+    color: $whiteColor;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 45px;
+    &::before {
+        height: 3px;
+        width: 40%;
+        position: absolute;
+        background-color: $secondColor;
+        content: "";
+        bottom: -15px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    &::after {
+        height: 3px;
+        width: 3%;
+        position: absolute;
+        background-color: $mainColor;
+        content: "";
+        bottom: -15px;
+        right: 60%;
+    }
+
+
+
+}
+
+
+.about {
+        background-color: $mainLightColor;
+        // background-image: url("../images/man-drive.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        position: relative;
+
+    .overlay {
+        padding: $sectionPadding 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $mainColor, $alpha: 0.8);
+        
+    }
+    .custom-head {
+        font-size: 22px;
+    }
+
+  
+
+    
+}
+
+
+
+.best_section {
+    .features_photos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            border-radius: 10px;
+        }
+        .main_photo {
+            width: 50%;
+        }
+        .child_photo {
+            width: 50%;
+           
+        
+        }
+    }
+}
+
+
+.features {
+    .desc {
+        margin-bottom: 20px;
+        color: $textColor3;
+    }
+    .features_item {
+        height: 140px;
+        padding: 10px;
+        background-color: $mainLightColor;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .img {
+            margin-bottom: 15px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+        span {
+            color: $whiteColor;
+            font-size: 18px;
+            font-family: $RegularFont;
+            display: block;
+        }
+    }
+}
+
+
+.footer {
+    background-color: #303131;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    a {
+        color: $textColor3 !important;
+    }
+    .footer_item {
+        .list {
+            .nav-link {
+                padding: 5px !important;
+            }
+            a{
+                color: $textColor3;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $textColor3;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .list-2 {
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: $textColor3;
+                font-size: 16px;
+                gap: 10px;
+            }
+        }
+        .social_media {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+            .border-icon {
+                transition: all .2s ease;
+                cursor: pointer;
+                &:hover , 
+                &:active , 
+                &:focus {
+                    background-color: $secondColor;
+                    svg , i {
+                        color: $whiteColor;
+                    }
+                }
+            }
+        }
+    }
+    .custom-head {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .logo {
+        text-align: center;
+    }
+    .overlay {
+        padding: $sectionPadding 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.9);
+
+        
+    }
+    .input-group  {
+        button {
+            min-width: 100px !important;
+            font-family: $mediumFont;
+            font-size: 14px;
+            
+        }
+        input {
+            background-color: $mainLightColor;
+            border-color: $mainLightColor;
+            color: $textColor3;
+            &:focus , 
+            &:active {
+
+                border-color: $mainLightColor;
+                outline: none !important;
+            }
+        }
+    }
+}
+
+
+.most_categories {
+    .section_nav {
+        margin-bottom: 30px;
+    }
+    .custom-head {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.custom-swiper-pagination {
+    bottom: 0 !important;
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $mainLightColor;
+        &.swiper-pagination-bullet-active {
+            background-color: $secondColor;
+        }
+    }
+}
+
+
+.features  {
+    padding: $sectionPadding 0;
+    
+}

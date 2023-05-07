@@ -1,0 +1,303 @@
+
+
+
+.rentalCarsBody {
+    padding: $sectionPadding 0;
+
+    .filter {
+        border-radius: 20px;
+        padding: 15px;
+        background-color: $mainLightColor;
+
+        .item {
+            border-bottom: 1px solid #4E4E4E !important;
+
+            &:last-of-type {
+                border-color: transparent !important;
+            }
+
+
+      
+
+
+            .filter-title {
+
+                display: block;
+                background-color: $mainLightColor;
+                color: $whiteColor;
+                padding: 8px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 18px;
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    // background-color: red;
+                    border-radius: 50%;
+                    @include flex();
+                    font-size: 18px;
+
+                    svg,
+                    i {
+                        color: $textColor3
+                    }
+                }
+
+                .right-span {
+                    @include flex();
+                    gap: 10px;
+                }
+            }
+        }
+
+        .filter_list {
+            border-radius: 0;
+            padding: 5px !important;
+            background-color: $mainLightColor;
+
+        }
+
+        .filter_list {
+
+
+            li {
+
+                a {
+                    background-color: $mainLightColor;
+                    padding: 10px;
+
+                    color: $textColor3 !important;
+                    font-size: 16px;
+                    @include flex();
+                    gap: 10px;
+                    justify-content: flex-start;
+                    border-bottom: 1px solid #4E4E4E !important;
+
+
+                }
+
+                &:last-of-type {
+                    a {
+                        border-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.name-head {
+    color: $whiteColor;
+    font-size: 30px;
+    font-family: $mediumFont;
+    margin-bottom: 25px;
+
+}
+
+.cars_car_item {
+    background-color: $mainLightColor;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    .cars_car_item_title {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 5px;
+     
+        span {
+            color: $whiteColor;
+            font-size: 16px;
+            font-family: $mediumFont;
+        }
+
+        .icon {
+            position: absolute;
+            left: 15px;
+
+            svg,
+            i {
+                &.active {
+                    color: $secondColor;
+                }
+
+                font-size: 22px;
+                color: $whiteColor;
+
+                cursor: pointer;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+
+
+
+    .price {
+        display: block;
+        color: $textColor;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-family: $mediumFont;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+  
+
+        .small-text {
+            font-size: 13px;
+        }
+    }
+
+    .features_span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        ;
+        margin-bottom: 20px;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: $whiteColor;
+            color: $textColor;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .footer_span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .view_all {
+            min-width: auto;
+            font-size: 13px;
+
+            .icon {
+                margin-right: 10px;
+            }
+
+            &:last-of-type {
+                .icon {
+                    background-color: $secondColor;
+                    color: $whiteColor;
+
+                    svg,
+                    i {
+                        color: $whiteColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-breadcrumb {
+    justify-content: flex-start;
+    align-items: center;
+
+    &::before {
+        display: none;
+    }
+
+    .breadcrumb-item {
+        display: flex;
+        align-items: center;
+        a {
+            font-size: 16px;
+            color: $whiteColor;
+            font-family: $RegularFont;
+        }
+        &::before {
+   
+        display: none;
+
+    
+        }
+        &:first-of-type {
+            &::before {
+                display: none;
+            }
+        }
+
+    }
+
+    .breadcrumb-item-home {
+        svg , i {
+            color: $whiteColor;
+            font-size: 18px;
+            margin-left: 10px;
+            color: $whiteColor;
+        }
+    }
+    .breadcrumb-item {
+        svg , i {
+            color: $whiteColor;
+            font-size: 16px;
+            color: $secondColor;
+        }
+    }
+
+}
+
+.custom-pagination {
+    margin: 25px 0;
+    .page-link {
+        background-color: $mainColor;
+        border-radius: 50% !important;
+        color: $whiteColor;
+        font-size: 16px;
+        border-color: $textColor3;
+        margin-left: 8px;
+        width: 35px;
+        height: 35px;
+        @include flex();
+        padding: 0;
+        &:hover , 
+        &:active , 
+        &:focus {
+            background-color: $mainLightColor
+        }
+        &.active {
+            background-color: $secondColor;
+        }
+    }
+}

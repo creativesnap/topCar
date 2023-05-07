@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>تأجير السيارات </title>
+    <!-- Css Filse -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/Swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fontAwesome/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar light-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#">
+                <img src="./images/logo/logo.png" alt="logo">
+            </a>
+            <div class="custom-navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="custom-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./RentalCars.html">تأجير السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./car.html">السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./aboutUs.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">إتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./RentalTerms.html">شروط التأجير </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-info">
+                    <li class="nav-item ">
+                        <a class="nav-link call-icon" href="tel:01254875412">
+
+                            <span class="border-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <span>
+                                01254875412
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item lang">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                العربية
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">En</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item search-icon">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="" class="form-control" placeholder="search">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Sidebar -->
+    <div class="sidebar">
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand me-0" href="./index.html">
+                    <img src="./images/logo/logo.png" alt="logo">
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./RentalCars.html">تأجير السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./car.html">السيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./aboutUs.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contact.html">إتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./RentalTerms.html"> شروط التأجير</a>
+                    </li>
+
+
+
+
+
+                </ul>
+                <div class="offcanvas-footer">
+                    <a class="nav-link call-icon justify-content-start" href="tel:01254875412">
+
+                        <span class="border-icon">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </span>
+                        <span>
+                            01254875412
+                        </span>
+                    </a>
+                    <a class="nav-link call-icon justify-content-start" href="tel:01254875412">
+
+                        <span class="border-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </span>
+                        <span>
+                            En
+                        </span>
+                    </a>
+
+                    <div class="nav-link">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="بحث" aria-describedby="button-addon1">
+                            <button class="btn custom-btn" type="button" id="button-addon1">بحث</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Stand Cars -->
+    <section class="stand-cars">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ol class="breadcrumb custom-breadcrumb">
+                        <li class="breadcrumb-item-home">
+                            <a href="./index.html">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                <i class="fas fa-angle-double-left"></i>
+                                الرئيسية
+                            </a>
+                        </li>
+
+                    </ol>
+                </div>
+                <div class="col-12 rental_car_swiper">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="swiper  rental_car_swiper2">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="title title2">رينج روفر ايفوك</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="img">
+                                                    <img src="./images/previewCar.png" alt="previewCar" class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <!-- Buttons -->
+                                                <div class="swiper_button">
+                                                    <div class="more">
+                                                        <button class="view_all m-auto">
+                                                            المزيد من المعلومات
+                                                            <div class="icon">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="title title2">رينج روفر ايفوك</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="img">
+                                                    <img src="./images/previewCar.png" alt="previewCar" class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <!-- Buttons -->
+                                                <div class="swiper_button">
+                                                    <div class="more">
+                                                        <button class="view_all m-auto">
+                                                            المزيد من المعلومات
+                                                            <div class="icon">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="title title2">رينج روفر ايفوك</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="img">
+                                                    <img src="./images/previewCar.png" alt="previewCar" class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <!-- Buttons -->
+                                                <div class="swiper_button">
+                                                    <div class="more">
+                                                        <button class="view_all m-auto">
+                                                            المزيد من المعلومات
+                                                            <div class="icon">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                          
+
+                                </div>
+                                <!-- Swiper Top -->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev in-small">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                </div>
+                                <div class="swiper-button-next in-small">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                    </div>
+                    <!-- Slider main container -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Stand Cars -->
+    <!-- RentalCars Body -->
+    <section class="rentalCarsBody">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-12 col-12 mb-3">
+                    <div class="page_filter">
+                        <h3 class="name-head">فلاتر</h3>
+                        <div class="filter">
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/6.png" alt="icon">
+                                        الصانع والطراز
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/7.png" alt="icon">
+                                        الفئات
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/4.png" alt="icon">
+                                        السعر الى سعر 
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample3">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/3.png" alt="icon">
+                                                    السعر الى سعر
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/8.png" alt="icon">
+                                        سنة الصنع 2023-2019
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample4">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample5" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/1.png" alt="icon">
+                                       نوع المحرك
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample5">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample6" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/2.png" alt="icon">
+                                       عدد المقاعد
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample6">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="filter-title" data-bs-toggle="collapse" href="#collapseExample7" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <span class="right-span">
+                                        <img src="./images/filter_icons/3.png" alt="icon">
+                                        المفضلة
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample7">
+                                    <div class="card card-body p-0 border-0">
+                                        <ul class="list-unstyled m-0 filter_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/filter_icons/checked.png" alt="icon">
+                                                    هذا النص قابل للتغير
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-12">
+                    <h3 class="name-head">سيارات ترفية</h3>
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="cars_car_item card">
+                                <div class="cars_car_item_title">
+                                    <span>
+                                        رينج روفر ايفوك
+                                    </span>
+                                    <div class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="img">
+                                        <img src="./images/notFoundCar.png" class="w-100" alt="carImage">
+                                    </div>
+                                    <span class="price">
+                                        <span class="total_price">25,0325 ج.م</span>
+                                        <span class="Monthly_fees">
+                                            <span class="small-text">أقساط شهرية</span>
+                                            <br />
+                                            <span class="total_price">25,0325</span>
+                                        </span>
+                                    </span>
+                                    <div class="features_span">
+                                        <span>
+                                            <img src="./images/filter_icons/1.png" alt="icon">
+                                            <span>1234</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/6.png" alt="icon">
+                                            <span>2023</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/8.png" alt="icon">
+                                            <span>0 كم</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="footer_span">
+                                        <button class="view_all">
+                                            تفاصيل
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                        <button class="view_all">
+                                            إستأجر الأن
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="cars_car_item card">
+                                <div class="cars_car_item_title">
+                                    <span>
+                                        رينج روفر ايفوك
+                                    </span>
+                                    <div class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="img">
+                                        <img src="./images/previewCar.png" class="w-100" alt="carImage">
+                                    </div>
+                                    <span class="price">
+                                        <span class="total_price">25,0325 ج.م</span>
+                                        <span class="Monthly_fees">
+                                            <span class="small-text">أقساط شهرية</span>
+                                            <br />
+                                            <span class="total_price">25,0325</span>
+                                        </span>
+                                    </span>
+                                    <div class="features_span">
+                                        <span>
+                                            <img src="./images/filter_icons/1.png" alt="icon">
+                                            <span>1234</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/6.png" alt="icon">
+                                            <span>2023</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/8.png" alt="icon">
+                                            <span>0 كم</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="footer_span">
+                                        <button class="view_all">
+                                            تفاصيل
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                        <button class="view_all">
+                                            إستأجر الأن
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="cars_car_item card">
+                                <div class="cars_car_item_title">
+                                    <span>
+                                        رينج روفر ايفوك
+                                    </span>
+                                    <div class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="img">
+                                        <img src="./images/previewCar.png" class="w-100" alt="carImage">
+                                    </div>
+                                    <span class="price">
+                                        <span class="total_price">25,0325 ج.م</span>
+                                        <span class="Monthly_fees">
+                                            <span class="small-text">أقساط شهرية</span>
+                                            <br />
+                                            <span class="total_price">25,0325</span>
+                                        </span>
+                                    </span>
+                                    <div class="features_span">
+                                        <span>
+                                            <img src="./images/filter_icons/1.png" alt="icon">
+                                            <span>1234</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/6.png" alt="icon">
+                                            <span>2023</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/8.png" alt="icon">
+                                            <span>0 كم</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="footer_span">
+                                        <button class="view_all">
+                                            تفاصيل
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                        <button class="view_all">
+                                            إستأجر الأن
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="cars_car_item card">
+                                <div class="cars_car_item_title">
+                                    <span>
+                                        رينج روفر ايفوك
+                                    </span>
+                                    <div class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="img">
+                                        <img src="./images/previewCar.png" class="w-100" alt="carImage">
+                                    </div>
+                                    <span class="price">
+                                        <span class="total_price">25,0325 ج.م</span>
+                                        <span class="Monthly_fees">
+                                            <span class="small-text">أقساط شهرية</span>
+                                            <br />
+                                            <span class="total_price">25,0325</span>
+                                        </span>
+                                    </span>
+                                    <div class="features_span">
+                                        <span>
+                                            <img src="./images/filter_icons/1.png" alt="icon">
+                                            <span>1234</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/6.png" alt="icon">
+                                            <span>2023</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/8.png" alt="icon">
+                                            <span>0 كم</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="footer_span">
+                                        <button class="view_all">
+                                            تفاصيل
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                        <button class="view_all">
+                                            إستأجر الأن
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="cars_car_item card">
+                                <div class="cars_car_item_title">
+                                    <span>
+                                        رينج روفر ايفوك
+                                    </span>
+                                    <div class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="img">
+                                        <img src="./images/previewCar.png" class="w-100" alt="carImage">
+                                    </div>
+                                    <span class="price">
+                                        <span class="total_price">25,0325 ج.م</span>
+                                        <span class="Monthly_fees">
+                                            <span class="small-text">أقساط شهرية</span>
+                                            <br />
+                                            <span class="total_price">25,0325</span>
+                                        </span>
+                                    </span>
+                                    <div class="features_span">
+                                        <span>
+                                            <img src="./images/filter_icons/1.png" alt="icon">
+                                            <span>1234</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/6.png" alt="icon">
+                                            <span>2023</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/8.png" alt="icon">
+                                            <span>0 كم</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="footer_span">
+                                        <button class="view_all">
+                                            تفاصيل
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                        <button class="view_all">
+                                            إستأجر الأن
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="cars_car_item card">
+                                <div class="cars_car_item_title">
+                                    <span>
+                                        رينج روفر ايفوك
+                                    </span>
+                                    <div class="icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="img">
+                                        <img src="./images/previewCar.png" class="w-100" alt="carImage">
+                                    </div>
+                                    <span class="price">
+                                        <span class="total_price">25,0325 ج.م</span>
+                                        <span class="Monthly_fees">
+                                            <span class="small-text">أقساط شهرية</span>
+                                            <br />
+                                            <span class="total_price">25,0325</span>
+                                        </span>
+                                    </span>
+                                    <div class="features_span">
+                                        <span>
+                                            <img src="./images/filter_icons/1.png" alt="icon">
+                                            <span>1234</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/6.png" alt="icon">
+                                            <span>2023</span>
+                                        </span>
+                                        <span>
+                                            <img src="./images/filter_icons/8.png" alt="icon">
+                                            <span>0 كم</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="footer_span">
+                                        <button class="view_all">
+                                            تفاصيل
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                        <button class="view_all">
+                                            إستأجر الأن
+                                            <div class="icon">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <ul class="pagination custom-pagination text-center justify-content-center align-items-center">
+                                <li class="page-item"><a class="page-link" href="#">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a></li>
+                              </ul>
+                        </div>
+          
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End RentalCars Body -->
+    <!-- Footer -->
+    <footer class="footer" style="background-image: url(./images/footer.png);">
+        <div class="overlay">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="logo mb-4">
+                                <img src="./images/logo/logo.png" alt="logo">
+                            </div>
+                            <form action="">
+                                <div class="input-group mb-3">
+
+                                    <input type="text" class="form-control" placeholder="البريد الإلكترونى"
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn custom-btn" type="button" id="button-addon1">إشترك الأن</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head">روابط مهمة</div>
+                            <ul class="list-unstyled list">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">شروط التأجير</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">شروط شروط الإستخدام</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head">إتصل بنا </div>
+                            <ul class="list-unstyled list-2">
+                                <a href="tel:010235689">
+                                    <li class="nav-item mb-2">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-phone-flip"></i>
+                                        </span>
+                                        010235689
+                                        <span class="bb">-</span>
+                                        010235689
+                                    </li>
+                                </a>
+                                <a href="https://goo.gl/maps/Qyo6XYXDMhE493rZ6">
+                                    <li class="nav-item">
+                                        <span class="border-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        لوريم ايبسوم دولار سيتلوريم ايبسوم دولار سيت
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-3">
+                        <div class="footer_item">
+                            <div class="custom-head"> تابعنا </div>
+                            <ul class="list-unstyled ">
+                                <li class="nav-item social_media mb-2">
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="border-icon">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </span>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scroll To Top -->
+    <section class="scroll-top-top">
+
+    </section>
+    <!-- End Scroll To Top -->
+
+
+
+
+    <!-- Js Files -->
+
+    <script src="./js/Jquery/jquery.3.6.0.min.js"></script>
+    <script src="./js/Bootstrap/bootstrap.min.js"></script>
+    <script src="./js/Swiper/swiper-bundle.min.js"></script>
+    <script src="./js/FontAwesome/all.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>
